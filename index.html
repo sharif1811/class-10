@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="text-align: center;">Onclick Img</h1>
+        <div>
+            <img id="main-img" src="./img/tree.jpg" width="800" height="450" alt="">
+        </div>
+        <div>
+            <img src="./img/tree2.jpg" alt="" width="198" height="200" onclick="change1()">
+            <img src="./img/tree3.jpg" alt="" width="198" height="200" onclick="change2()">
+            <img src="./img/tree5.jpg" alt="" width="198" height="200" onclick="change3()">
+            <img src="./img/tree6.jpg" alt="" width="198" height="200" onclick="change4()">
+        </div>
+    </div>
+    <script>
+        let myimg = document.getElementById("main-img");
+        function change1(){
+            myimg.src = "./img/tree2.jpg"
+        };
+
+        function change2(){
+            myimg.src = "./img/tree3.jpg"
+        };
+
+        function change3(){
+            myimg.src = "./img/tree5.jpg"
+        };
+
+        function change4(){
+            myimg.src = "./img/tree6.jpg"
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
